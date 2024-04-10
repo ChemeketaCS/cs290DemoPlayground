@@ -22,5 +22,5 @@ classDiagram
     }
 
     %%Links between entities - don't worry too much about details
-    Hero <|-- Team
+    Hero --o Team
 ```
