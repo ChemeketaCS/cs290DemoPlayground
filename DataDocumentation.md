@@ -5,7 +5,7 @@ Here are our proposed data types:
 ```mermaid
 classDiagram
     class Team {
-      +Hero heros
+      +Hero[] heros
       +string name
       +string city
       +date formedOn
