@@ -21,6 +21,10 @@ classDiagram
       +double damageCaused
     }
 
-    %%Links between entities - don't worry too much about details
-    Hero --o Team
+    Hero "*" -- "0..1" Team : Heroes can be on teams
 ```
+
+Relations:
+
+* A **Team** can have any number of **Hero**s (including 0). Each Hero is on at most one team. There is no ownership.
+  A hero can leave a team and if a team disbands the Heroes all still exist.
