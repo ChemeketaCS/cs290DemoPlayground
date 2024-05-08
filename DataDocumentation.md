@@ -21,7 +21,7 @@ classDiagram
       +double damageCaused
     }
 
-    Hero "*" -- "0..1" Team : Heroes can be on teams
+    Hero "*" --> "0..1" Team : Is part of
 ```
 
 Relations:
