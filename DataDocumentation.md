@@ -5,24 +5,24 @@ Here are our proposed data types:
 ```mermaid
 classDiagram
     class Team {
-      +string name
-      +City location
-      +date formedOn
-      +bool active
+      +name : string
+      +location : City
+      +formedOn : date
+      +active : bool
     }
 
     class Hero {
-      +Team team
-      +string name
-      +string secretIdentity
-      +int age
-      +string[] powers
-      +double damageCaused
+      +team : Team
+      +name : string
+      +secretIdentity : string
+      +age : int
+      +powers : string[]
+      +damageCaused : double
     }
 
     class City {
-      +string name
-      +int population
+      +name : string
+      +population : int
     }
 
     Hero "*" --> "0..1" Team : Is part of
